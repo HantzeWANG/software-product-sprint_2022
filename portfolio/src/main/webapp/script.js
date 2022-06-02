@@ -26,3 +26,16 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+function addRandomQuote() {
+    const quotes =
+        ['Go ahead, make my day!', 'After all, tomorrow is another day!', 'Mankind was born on Earth. It was never meant to die here', 
+        'We laughed and kept saying"see u soon",but inside we both knew we would never see each other again.'];
+  
+    // Pick a random greeting.
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+  
+    // Add it to the page.
+    const quoteContainer = document.getElementById('quotes-container');
+    quoteContainer.innerText = quote;
+  }
