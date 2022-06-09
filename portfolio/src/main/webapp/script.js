@@ -40,10 +40,10 @@ function addRandomQuote() {
     quoteContainer.innerText = quote;
   }
 
-  async function showServerTime() {
-    const responseFromServer = await fetch('/date');
+  async function showHello() {
+    const responseFromServer = await fetch('/hello');
     const textFromResponse = await responseFromServer.text();
   
-    const dateContainer = document.getElementById('date-container');
-    dateContainer.innerText = textFromResponse;
+    const helloContainer = document.getElementById('hello-container');
+    helloContainer.innerText = textFromResponse;
   }
