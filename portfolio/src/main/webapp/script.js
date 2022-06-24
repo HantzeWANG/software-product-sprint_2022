@@ -47,8 +47,4 @@ function addRandomQuote() {
     const helloContainer = document.getElementById('hello-container');
 
     helloContainer.innerText = textFromResponse[Math.floor(Math.random() * textFromResponse.length)];
-
-    // console.log(textFromResponse.get(0));
-    // console.log(textFromResponse.get(1));
-    // console.log(textFromResponse.get(2));
   }

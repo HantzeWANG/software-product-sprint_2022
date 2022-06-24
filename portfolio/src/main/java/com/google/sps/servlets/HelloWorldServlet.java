@@ -30,9 +30,6 @@ public class HelloWorldServlet extends HttpServlet {
     Gson gson = new Gson();
     String json = gson.toJson(strings);
 
-    // response.setContentType("text/html;");
-    // response.getWriter().println(strings.get(answer));
-
     response.setContentType("text/json;");
     response.getWriter().println(json);
     
