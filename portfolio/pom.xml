@@ -27,6 +27,12 @@
       <version>4.0.1</version>
     </dependency>
 
+    <dependency>
+      <groupId>com.google.cloud</groupId>
+      <artifactId>google-cloud-datastore</artifactId>
+      <version>1.104.0</version>
+    </dependency>
+
     <!-- Jetty -->
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
@@ -38,6 +44,12 @@
       <artifactId>jetty-annotations</artifactId>
       <version>${jetty.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.9.0</version>
+    </dependency> 
   </dependencies>
 
   <build>

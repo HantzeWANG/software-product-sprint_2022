@@ -30,7 +30,7 @@ function addRandomGreeting() {
 function addRandomQuote() {
     const quotes =
         ['Go ahead, make my day!', 'After all, tomorrow is another day!', 'Mankind was born on Earth. It was never meant to die here', 
-        'We laughed and kept saying"see u soon",but inside we both knew we would never see each other again.'];
+        'We laughed and kept saying"see u soon", but inside we both knew we would never see each other again.'];
   
     // Pick a random greeting.
     const quote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -38,4 +38,13 @@ function addRandomQuote() {
     // Add it to the page.
     const quoteContainer = document.getElementById('quotes-container');
     quoteContainer.innerText = quote;
+  }
+
+  async function showHello() {
+    const responseFromServer = await fetch('/hello');
+    const textFromResponse = await responseFromServer.json();
+  
+    const helloContainer = document.getElementById('hello-container');
+
+    helloContainer.innerText = textFromResponse[Math.floor(Math.random() * textFromResponse.length)];
   }

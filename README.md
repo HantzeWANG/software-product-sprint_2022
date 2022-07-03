@@ -1,3 +1,3 @@
 # Google Software Product Sprint
 
-This repo contains [your name]'s portfolio and SPS projects.
+This repo contains Hanze's portfolio and SPS projects.
